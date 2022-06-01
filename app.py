@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import streamlit as st 
+import catboost 
 
 sellingprice = open("sellingprice.pkl","rb")
 regressor = pickle.load(sellingprice)
