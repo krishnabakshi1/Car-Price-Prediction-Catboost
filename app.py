@@ -23,15 +23,15 @@ def main():
     st.subheader("Get a Current Market Value for Your Car!(South Asian Market)")
     name  = st.selectbox("Select or Type Car name", names)
     year  = st.slider("Select Car Year", 1994,2020,2012)
-    km_driven = st.slider("Enter Miles Driven" ,1,500000,1)
+    km_driven = st.slider("Enter Miles Driven" ,1,500000,1000)
     fuel  = st.selectbox("Select Fuel Type",("Petrol","Diesel","CNG","LPG"))
     seller_type  = st.selectbox("Select Seller Type" ,("Individual","Dealer","Trustmark Dealer"))
     transmission =  st.radio("Select Transmission", ("Automatic","Manual"))
-    mileage =  st.slider("Enter Mileage" ,0,42,0)
-    engine =  st.slider("Select Engine Capacity" , 600,3700,600)
-    max_power =  st.slider("Select Max Power", 30,400,30)
-    seats =  st.slider("Select Number of Seats", 2,10,2)
-    new_torque =  st.slider("Select RPM" , 400,45000,40)
+    mileage =  st.slider("Enter Mileage" ,0,42,10)
+    engine =  st.slider("Select Engine Capacity" , 600,3700,1000)
+    max_power =  st.slider("Select Max Power", 30,400,100)
+    seats =  st.slider("Select Number of Seats", 2,10,4)
+    new_torque =  st.slider("Select RPM" , 400,45000,4000)
 
     result = ""
     if st.button("Calculate Estimated Car Price"):
