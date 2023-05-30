@@ -19,7 +19,7 @@ def predict_car_price(name,year,km_driven,fuel,seller_type,transmission,mileage,
     return prediction 
 
 def main():
-    st.title("Car Price Prediction using CatBoostRegressor Work Sample By Krishna Bakshi")
+    st.title("Car Price Prediction using CatBoostRegressor project by Krishna Bakshi")
     st.subheader("Calculate Current Market Value for Your Car ")
     name  = st.selectbox("Select or Type Car name", names)
     year  = st.slider("Select Car Year", 1994,2020,2012)
